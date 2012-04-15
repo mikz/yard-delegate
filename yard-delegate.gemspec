@@ -4,8 +4,8 @@ require File.expand_path('../lib/yard-delegate/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Michal Cichra"]
   gem.email         = ["michal@o2h.cz"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Generates docs for delegated methods}
+  gem.summary       = %q{YARD plugin to allow generation of delegated methods}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)

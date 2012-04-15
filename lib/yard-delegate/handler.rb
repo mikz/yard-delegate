@@ -1,3 +1,5 @@
+require 'yard'
+
 module YARD
   module Delegate
     class Handler < YARD::Handlers::Ruby::Base
