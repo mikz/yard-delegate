@@ -13,7 +13,7 @@ module YARD
         names.each do |name|
           register YARD::CodeObjects::MethodObject.new(namespace, name, scope) { |o|
             o.parameters = [["*args", nil], ["&block", nil]]
-            o.source = "def #{name}(*args, &block)\n  #{to}.#{name}\nend"
+            o.source = "def #{name}(*args, &block)\n  #{to}.#{name}(*args, &block)\nend"
             o.signature = "def #{name}(*args, &block)"
             o.docstring = statement.comments.to_s.empty? ? "" : statement.comments
             o.delegate = to
